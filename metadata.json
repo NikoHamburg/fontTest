@@ -1,0 +1,6 @@
+{
+  "name": "fontTest",
+  "identifier": "com.metrological.app.fontTest",
+  "version": "1.0.0",
+  "icon": "./static/icon.png"
+}
