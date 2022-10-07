@@ -45,7 +45,7 @@ export default class App extends Lightning.Component {
           text: "Let's start Building!",
           fontFace: "Regular",
           fontSize: 64,
-          textColor: 0xbb000000,
+          textColor: 0xbbAABB22,
         },
       },
       Text2: {
@@ -56,7 +56,7 @@ export default class App extends Lightning.Component {
           text: "Let's start Building!",
           fontFace: "VF-Regular",
           fontSize: 64,
-          textColor: 0xbb000000,
+          textColor: 0xbbAABB22,
         },
       },
       Text3: {
@@ -67,7 +67,7 @@ export default class App extends Lightning.Component {
           text: "Let's start Building!",
           fontFace: "VF-Bold",
           fontSize: 64,
-          textColor: 0xbb000000,
+          textColor: 0xbbAABB22,
         },
       },
     };
