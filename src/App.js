@@ -17,55 +17,61 @@
  * limitations under the License.
  */
 
-import { Lightning, Utils } from '@lightningjs/sdk'
+import { Lightning, Utils } from "@lightningjs/sdk";
 
 export default class App extends Lightning.Component {
   static getFonts() {
-    return [{ family: 'Regular', url: Utils.asset('fonts/Roboto-Regular.ttf') }]
+    return [
+      { family: "Regular", url: Utils.asset("fonts/Roboto-Regular.ttf") },
+
+      {
+        family: "VF-Regular",
+        url: Utils.asset("fonts/Vodafone_Rg.ttf"),
+      },
+      {
+        family: "VF-Bold",
+        url: Utils.asset("fonts/Vodafone_Bold.ttf"),
+      },
+    ];
   }
 
   static _template() {
     return {
-      Background: {
-        w: 1920,
-        h: 1080,
-        color: 0xfffbb03b,
-        src: Utils.asset('images/background.png'),
-      },
-      Logo: {
-        mountX: 0.5,
-        mountY: 1,
-        x: 960,
-        y: 600,
-        src: Utils.asset('images/logo.png'),
-      },
       Text: {
         mount: 0.5,
         x: 960,
-        y: 720,
+        y: 220,
         text: {
           text: "Let's start Building!",
-          fontFace: 'Regular',
+          fontFace: "Regular",
           fontSize: 64,
-          textColor: 0xbbffffff,
+          textColor: 0xbb000000,
         },
       },
-    }
-  }
-
-  _init() {
-    this.tag('Background')
-      .animation({
-        duration: 15,
-        repeat: -1,
-        actions: [
-          {
-            t: '',
-            p: 'color',
-            v: { 0: { v: 0xfffbb03b }, 0.5: { v: 0xfff46730 }, 0.8: { v: 0xfffbb03b } },
-          },
-        ],
-      })
-      .start()
+      Text2: {
+        mount: 0.5,
+        x: 960,
+        y: 420,
+        text: {
+          text: "Let's start Building!",
+          fontFace: "VF-Regular",
+          fontSize: 64,
+          textColor: 0xbb000000,
+        },
+      },
+      Text3: {
+        mount: 0.5,
+        x: 960,
+        y: 620,
+        text: {
+          text: "Let's start Building!",
+          fontFace: "VF-Bold",
+          fontSize: 64,
+          textColor: 0xbb000000,
+        },
+      },
+    };
   }
 }
+
+// _init() {}
