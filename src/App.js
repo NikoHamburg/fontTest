@@ -18,6 +18,7 @@
  */
 
 import { Lightning, Utils } from "@lightningjs/sdk";
+import { displayText } from "./displayText";
 
 export default class App extends Lightning.Component {
   static getFonts() {
@@ -34,44 +35,168 @@ export default class App extends Lightning.Component {
       },
     ];
   }
-
   static _template() {
     return {
       Text: {
-        mount: 0.5,
-        x: 960,
-        y: 220,
-        text: {
-          text: "Let's start Building!",
+        Text1: {
+          x: 0,
+          y: 0,
+          type: displayText,
+          displayText: "Regular 64",
+          fontSize: 64,
           fontFace: "Regular",
-          fontSize: 64,
-          textColor: 0xbbAABB22,
         },
-      },
-      Text2: {
-        mount: 0.5,
-        x: 960,
-        y: 420,
-        text: {
-          text: "Let's start Building!",
+        Text2: {
+          x: 500,
+          y: 0,
+          type: displayText,
+          displayText: "Regular bold 64",
+          fontSize: 64,
+          fontFace: "Regular",
+          fontStyle: "bold"
+        },
+        Text3: {
+          x: 1000,
+          y: 0,
+          type: displayText,
+          displayText: "Regular italic 64",
+          fontSize: 64,
+          fontFace: "Regular",
+          fontStyle: "italic"
+        },
+        Text4: {
+          x: 0,
+          y: 120,
+          type: displayText,
+          displayText: "VF-Regular 64",
+          fontSize: 64,
           fontFace: "VF-Regular",
-          fontSize: 64,
-          textColor: 0xbbAABB22,
         },
-      },
-      Text3: {
-        mount: 0.5,
-        x: 960,
-        y: 620,
-        text: {
-          text: "Let's start Building!",
-          fontFace: "VF-Bold",
+        Text5: {
+          x: 500,
+          y: 120,
+          type: displayText,
+          displayText: "VF-Regular bold 64",
           fontSize: 64,
-          textColor: 0xbbAABB22,
+          fontFace: "VF-Regular",
+          fontStyle: "bold"
+        },
+        Text6: {
+          x: 1000,
+          y: 120,
+          type: displayText,
+          displayText: "VF-Regular italic 64",
+          fontSize: 64,
+          fontFace: "VF-Regular",
+          fontStyle: "italic"
+        },
+        Text7: {
+          x: 0,
+          y: 240,
+          type: displayText,
+          displayText: "VF-Bold 64",
+          fontSize: 64,
+          fontFace: "VF-Bold",
+        },
+        Text8: {
+          x: 500,
+          y: 240,
+          type: displayText,
+          displayText: "VF-Bold bold 64",
+          fontSize: 64,
+          fontFace: "VF-Bold",
+          fontStyle: "bold"
+        },
+        Text9: {
+          x: 1000,
+          y: 240,
+          type: displayText,
+          displayText: "VF-Bold italic 64",
+          fontSize: 64,
+          fontFace: "VF-Bold",
+          fontStyle: "italic"
+        },
+        Text10: {
+          x: 0,
+          y: 360,
+          type: displayText,
+          displayText: "Regular 32",
+          fontSize: 32,
+          fontFace: "Regular",
+        },
+        Text11: {
+          x: 500,
+          y: 360,
+          type: displayText,
+          displayText: "Regular bold 32",
+          fontSize: 32,
+          fontFace: "Regular",
+          fontStyle: "bold"
+        },
+        Text12: {
+          x: 1000,
+          y: 360,
+          type: displayText,
+          displayText: "Regular italic 32",
+          fontSize: 32,
+          fontFace: "Regular",
+          fontStyle: "italic"
+        },
+        Text13: {
+          x: 0,
+          y: 480,
+          type: displayText,
+          displayText: "VF-Regular 32",
+          fontSize: 32,
+          fontFace: "VF-Regular",
+        },
+        Text14: {
+          x: 500,
+          y: 480,
+          type: displayText,
+          displayText: "VF-Regular bold 32",
+          fontSize: 32,
+          fontFace: "VF-Regular",
+          fontStyle: "bold"
+        },
+        Text15: {
+          x: 1000,
+          y: 480,
+          type: displayText,
+          displayText: "VF-Regular italic 32",
+          fontSize: 32,
+          fontFace: "VF-Regular",
+          fontStyle: "italic"
+        },
+        Text16: {
+          x: 0,
+          y: 600,
+          type: displayText,
+          displayText: "VF-Bold 32",
+          fontSize: 32,
+          fontFace: "VF-Bold",
+        },
+        Text17: {
+          x: 500,
+          y: 600,
+          type: displayText,
+          displayText: "VF-Bold bold 32",
+          fontSize: 32,
+          fontFace: "VF-Bold",
+          fontStyle: "bold"
+        },
+        Text18: {
+          x: 1000,
+          y: 600,
+          type: displayText,
+          displayText: "VF-Bold italic 32",
+          fontSize: 32,
+          fontFace: "VF-Bold",
+          fontStyle: "italic"
         },
       },
     };
   }
-}
 
-// _init() {}
+  _init() {}
+}
