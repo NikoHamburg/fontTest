@@ -39,16 +39,16 @@ export default class App extends Lightning.Component {
     return {
       Text: {
         Text1: {
-          x: 0,
-          y: 0,
+          x: 100,
+          y: 100,
           type: displayText,
           displayText: "Regular 64",
           fontSize: 64,
           fontFace: "Regular",
         },
         Text2: {
-          x: 500,
-          y: 0,
+          x: 600,
+          y: 100,
           type: displayText,
           displayText: "Regular bold 64",
           fontSize: 64,
@@ -56,8 +56,8 @@ export default class App extends Lightning.Component {
           fontStyle: "bold"
         },
         Text3: {
-          x: 1000,
-          y: 0,
+          x: 1100,
+          y: 100,
           type: displayText,
           displayText: "Regular italic 64",
           fontSize: 64,
@@ -65,16 +65,16 @@ export default class App extends Lightning.Component {
           fontStyle: "italic"
         },
         Text4: {
-          x: 0,
-          y: 120,
+          x: 100,
+          y: 220,
           type: displayText,
           displayText: "VF-Regular 64",
           fontSize: 64,
           fontFace: "VF-Regular",
         },
         Text5: {
-          x: 500,
-          y: 120,
+          x: 600,
+          y: 220,
           type: displayText,
           displayText: "VF-Regular bold 64",
           fontSize: 64,
@@ -82,8 +82,8 @@ export default class App extends Lightning.Component {
           fontStyle: "bold"
         },
         Text6: {
-          x: 1000,
-          y: 120,
+          x: 1100,
+          y: 220,
           type: displayText,
           displayText: "VF-Regular italic 64",
           fontSize: 64,
@@ -91,16 +91,16 @@ export default class App extends Lightning.Component {
           fontStyle: "italic"
         },
         Text7: {
-          x: 0,
-          y: 240,
+          x: 100,
+          y: 340,
           type: displayText,
           displayText: "VF-Bold 64",
           fontSize: 64,
           fontFace: "VF-Bold",
         },
         Text8: {
-          x: 500,
-          y: 240,
+          x: 600,
+          y: 340,
           type: displayText,
           displayText: "VF-Bold bold 64",
           fontSize: 64,
@@ -108,8 +108,8 @@ export default class App extends Lightning.Component {
           fontStyle: "bold"
         },
         Text9: {
-          x: 1000,
-          y: 240,
+          x: 1100,
+          y: 340,
           type: displayText,
           displayText: "VF-Bold italic 64",
           fontSize: 64,
@@ -117,16 +117,16 @@ export default class App extends Lightning.Component {
           fontStyle: "italic"
         },
         Text10: {
-          x: 0,
-          y: 360,
+          x: 100,
+          y: 460,
           type: displayText,
           displayText: "Regular 32",
           fontSize: 32,
           fontFace: "Regular",
         },
         Text11: {
-          x: 500,
-          y: 360,
+          x: 600,
+          y: 460,
           type: displayText,
           displayText: "Regular bold 32",
           fontSize: 32,
@@ -134,8 +134,8 @@ export default class App extends Lightning.Component {
           fontStyle: "bold"
         },
         Text12: {
-          x: 1000,
-          y: 360,
+          x: 1100,
+          y: 460,
           type: displayText,
           displayText: "Regular italic 32",
           fontSize: 32,
@@ -143,16 +143,16 @@ export default class App extends Lightning.Component {
           fontStyle: "italic"
         },
         Text13: {
-          x: 0,
-          y: 480,
+          x: 100,
+          y: 580,
           type: displayText,
           displayText: "VF-Regular 32",
           fontSize: 32,
           fontFace: "VF-Regular",
         },
         Text14: {
-          x: 500,
-          y: 480,
+          x: 600,
+          y: 580,
           type: displayText,
           displayText: "VF-Regular bold 32",
           fontSize: 32,
@@ -160,8 +160,8 @@ export default class App extends Lightning.Component {
           fontStyle: "bold"
         },
         Text15: {
-          x: 1000,
-          y: 480,
+          x: 1100,
+          y: 580,
           type: displayText,
           displayText: "VF-Regular italic 32",
           fontSize: 32,
@@ -169,16 +169,16 @@ export default class App extends Lightning.Component {
           fontStyle: "italic"
         },
         Text16: {
-          x: 0,
-          y: 600,
+          x: 100,
+          y: 700,
           type: displayText,
           displayText: "VF-Bold 32",
           fontSize: 32,
           fontFace: "VF-Bold",
         },
         Text17: {
-          x: 500,
-          y: 600,
+          x: 600,
+          y: 700,
           type: displayText,
           displayText: "VF-Bold bold 32",
           fontSize: 32,
@@ -186,8 +186,8 @@ export default class App extends Lightning.Component {
           fontStyle: "bold"
         },
         Text18: {
-          x: 1000,
-          y: 600,
+          x: 1100,
+          y: 700,
           type: displayText,
           displayText: "VF-Bold italic 32",
           fontSize: 32,
