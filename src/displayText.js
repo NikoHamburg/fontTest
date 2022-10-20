@@ -10,7 +10,6 @@ class displayText extends Lightning.Component {
       Label: {
         x: 20,
         y: 8,
-        color: 0xffffffff,
       },
     };
   }
@@ -21,19 +20,28 @@ class displayText extends Lightning.Component {
         text: this.displayText,
         fontSize: this.fontSize,
         fontFace: this.fontFace,
-        fontStyle: this.fontStyle || 'normal',
+        fontStyle: this.fontStyle || "normal",
+        paddingLeft: 12,
+        paddingRight: 12,
+        letterSpacing: 4,
+        wordWrap: true,
+        wordWrapWidth: 4,
+        textOverflow: "ellipsis",
+        textAlign: "center",
+        textColor: 0xff555555,
       },
     });
   }
-  _focus() {
-    this.color = 0xff555555;
-    this.tag("Label").color = 0xfff1f1f1;
-  }
 
-  _unfocus() {
-    this.color = 0xff000000;
-    this.tag("Label").color = 0xffffffff;
-  }
+  // _focus() {
+  //   this.color = 0xff555555;
+  //   this.tag("Label").color = 0xfff1f1f1;
+  // }
+
+  // _unfocus() {
+  //   this.color = 0xff000000;
+  //   this.tag("Label").color = 0xffffffff;
+  // }
 }
 
 export { displayText };
